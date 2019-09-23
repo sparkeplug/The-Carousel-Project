@@ -1,0 +1,38 @@
+{
+  "name": "the-carousel-project",
+  "version": "0.1.0",
+  "description": "A simple, reusable carousel project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
+  "engines": {
+    "node": ">=4.2.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sparkeplug/The-Carousel-Project.git"
+  },
+  "keywords": [
+    "carousel"
+  ],
+  "author": "Prabhu Ram Kumar <prabhu.rk90@gmail.com> (www.linkedin.com/in/prabhu-ram-kumar-balasubramanian)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sparkeplug/The-Carousel-Project/issues"
+  },
+  "homepage": "https://github.com/sparkeplug/The-Carousel-Project#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^6.1.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "mocha": "^6.2.0",
+    "prettier": "^1.18.2"
+  }
+}
