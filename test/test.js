@@ -3,7 +3,7 @@
 'use strict';
 
 const { expect } = require('chai');
-const Carousel = require('../index');
+const Carousel = require('../src/index');
 
 describe('Carousel', () => {
   it('should create a carousel', () => {
