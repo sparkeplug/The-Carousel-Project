@@ -1,11 +1,12 @@
 {
   "name": "the-carousel-project",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A simple, reusable carousel project.",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "test": "node ./node_modules/.bin/mocha --reporter spec",
-    "cover": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*"
+    "cover": "node ./node_modules/istanbul/lib/cli.js cover node_modules/mocha/bin/_mocha -- -R spec test/*",
+    "build": "webpack --config webpack.config.js"
   },
   "engines": {
     "node": ">=4.2.4"
@@ -24,10 +25,10 @@
   },
   "homepage": "https://github.com/sparkeplug/The-Carousel-Project#readme",
   "devDependencies": {
-    "@babel/core": "^7.6.0",
-    "babel-loader": "^8.0.6",
     "chai": "^4.2.0",
+    "clean-webpack-plugin": "^3.0.0",
     "coveralls": "^3.0.6",
+    "css-loader": "^3.2.0",
     "eslint": "^6.1.0",
     "eslint-config-airbnb": "^18.0.1",
     "eslint-config-prettier": "^6.3.0",
@@ -37,8 +38,12 @@
     "eslint-plugin-react": "^7.14.3",
     "eslint-plugin-react-hooks": "^1.7.0",
     "istanbul": "^0.4.5",
+    "mini-css-extract-plugin": "^0.8.0",
     "mocha": "^6.2.0",
+    "node-sass": "^4.12.0",
     "prettier": "^1.18.2",
+    "sass-loader": "^8.0.0",
+    "style-loader": "^1.0.0",
     "webpack": "^4.40.2",
     "webpack-cli": "^3.3.9"
   }
