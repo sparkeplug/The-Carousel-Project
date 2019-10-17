@@ -1,7 +1,6 @@
 class Carousel {
   constructor(carouselElem, initialSlide = 1) {
     this.gtCarousel = carouselElem;
-    console.log('TEST ELEM -> ', this.gtCarousel);
     this.cardsWrapper = this.gtCarousel.querySelector('.gt-carousel__cards');
     this.cards = this.cardsWrapper.querySelectorAll('.gt-carousel__card');
     this.currentSlide = initialSlide;
