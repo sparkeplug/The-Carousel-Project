@@ -2,7 +2,10 @@
   "name": "the-carousel-project",
   "version": "0.1.5",
   "description": "A simple, reusable carousel project.",
-  "main": "dist/theCarouselProject.min.js",
+  "main": "dist/index.js",
+  "files" : [
+    "dist/index.js"
+  ],  
   "scripts": {
     "start": "webpack-dev-server --config webpack.dev.js --open",
     "test": "jest",
