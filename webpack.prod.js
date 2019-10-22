@@ -7,8 +7,11 @@ module.exports = {
   mode: 'production',
   entry: './src/index.js',
   output: {
-    filename: 'index.js',
-    path: path.resolve(__dirname, 'dist')
+    filename: 'theCarouselProject.min.js',
+    path: path.resolve(__dirname, 'dist'),
+    library: 'theCarouselProject',
+    libraryTarget: 'umd',
+    umdNamedDefine: true
   },
   plugins: [
     new MiniCssExtractPlugin({

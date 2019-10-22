@@ -5,7 +5,7 @@ import './styles/carousel.scss';
  * Initialize and start a carousel
  * @param {object} config
  */
-export default function CarouselInit(config = {}) {
+export function CarouselInit(config = {}) {
   const { initSlide } = config;
   const carousels = document.querySelectorAll('.gt-carousel');
   const carouselsInits = [];
