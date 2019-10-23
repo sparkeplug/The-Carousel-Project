@@ -1,14 +1,18 @@
-# The-Carousel-Project
+# The Carousel Project
 
-[![Build Status](https://travis-ci.org/sparkeplug/The-Carousel-Project.svg?branch=master)](https://travis-ci.org/sparkeplug/The-Carousel-Project)
-[![Coverage Status](https://coveralls.io/repos/github/sparkeplug/The-Carousel-Project/badge.svg?branch=master)](https://coveralls.io/github/sparkeplug/The-Carousel-Project?branch=master)
+[![Build Status](https://travis-ci.org/sparkeplug/The-Carousel-Project.svg?branch=master)](https://travis-ci.org/sparkeplug/The-Carousel-Project) [![Coverage Status](https://coveralls.io/repos/github/sparkeplug/The-Carousel-Project/badge.svg?branch=master)](https://coveralls.io/github/sparkeplug/The-Carousel-Project?branch=master)
 
-A small Carousel library.
+The Carousel Project is a simple and lightweight carousel made with just JAVASCRIPT.    
+# Installation
 
-## NOTE / WARNING
+```npm install the-carousel-project```
 
-    In testing phase. Still under construction and fixing of bugs.
+# Usage
 
-    For demo please visit the following link :
+```import { CarouselInit } from 'the-carousel-project'```
 
-    [StackBlitz - Sparkeplug](https://stackblitz.com/edit/slide-carousel-class)
+```CarouselInit();```
+
+# Demo
+
+[STACKBLITZ](https://the-carousel-project.stackblitz.io)
