@@ -1,8 +1,8 @@
 class Carousel {
   constructor(carouselElem, initialSlide = 1) {
     this.gtCarousel = carouselElem;
-    this.cardsWrapper = this.gtCarousel.querySelector('.gt-carousel__cards');
-    this.cards = this.cardsWrapper.querySelectorAll('.gt-carousel__card');
+    this.cardsWrapper = this.gtCarousel.querySelector('.tcp-carousel__cards');
+    this.cards = this.cardsWrapper.querySelectorAll('.tcp-carousel__card');
     this.currentSlide = initialSlide;
     this.carouselCardsLength = 0;
     this.carouselData = [];
@@ -39,9 +39,9 @@ class Carousel {
 
   navigateSlide(mode, event) {
     if (event && event.type === 'click') {
-      this.loaderData.element.classList.remove('gt-carousel__loader-bar--loading');
+      this.loaderData.element.classList.remove('tcp-carousel__loader-bar--loading');
       // this.loaderData.element.offsetWidth;
-      this.loaderData.element.classList.add('gt-carousel__loader-bar--loading');
+      this.loaderData.element.classList.add('tcp-carousel__loader-bar--loading');
     }
     this.dataTypes.forEach(d => {
       const elem = this.navigators.querySelector(`.${d}`);
@@ -55,7 +55,7 @@ class Carousel {
       this.currentSlide =
         this.currentSlide === this.carouselCardsLength ? 1 : this.currentSlide + 1;
     }
-    // const carouselCard = document.querySelectorAll(".gt-carousel__card");
+    // const carouselCard = document.querySelectorAll(".tcp-carousel__card");
     this.cards.forEach(card => {
       // eslint-disable-next-line no-param-reassign
       card.style.transform = `translateX(-${100 * (this.currentSlide - 1)}%)`;
@@ -64,7 +64,7 @@ class Carousel {
   }
 
   computePrevCurrentNextData() {
-    const navigator = document.querySelector('.gt-carousel__navigators');
+    const navigator = document.querySelector('.tcp-carousel__navigators');
     this.data.prev = this.carouselData[
       this.currentSlide === 1 ? this.carouselData.length - 1 : this.currentSlide - 2
     ];
@@ -81,29 +81,29 @@ class Carousel {
 
   appendTextNavigators() {
     const navigator = document.createElement('div');
-    navigator.className = 'gt-carousel__navigators';
+    navigator.className = 'tcp-carousel__navigators';
     const wrapper = document.createElement('div');
-    wrapper.className = 'gt-carousel__navigators-nav';
+    wrapper.className = 'tcp-carousel__navigators-nav';
     this.dataTypes.forEach(type => {
       wrapper.appendChild(this.createHeaders(type));
     });
     navigator.appendChild(wrapper);
     this.gtCarousel.appendChild(navigator);
-    this.navigators = this.gtCarousel.querySelector('.gt-carousel__navigators');
+    this.navigators = this.gtCarousel.querySelector('.tcp-carousel__navigators');
     this.computePrevCurrentNextData();
   }
 
   appendLoader() {
     const loaderContainer = document.createElement('div');
-    loaderContainer.className = 'gt-carousel__loader';
+    loaderContainer.className = 'tcp-carousel__loader';
     const loaderBar = document.createElement('span');
-    loaderBar.className = 'gt-carousel__loader-bar gt-carousel__loader-bar--loading';
+    loaderBar.className = 'tcp-carousel__loader-bar tcp-carousel__loader-bar--loading';
     loaderBar.addEventListener('animationiteration', this.loaderAnimationIteration.bind(this));
     loaderContainer.appendChild(loaderBar);
     this.gtCarousel.appendChild(loaderContainer);
     this.loaderData.element = this.gtCarousel
-      .querySelector('.gt-carousel__loader')
-      .querySelector('.gt-carousel__loader-bar');
+      .querySelector('.tcp-carousel__loader')
+      .querySelector('.tcp-carousel__loader-bar');
   }
 
   loaderAnimationIteration() {
@@ -146,7 +146,7 @@ class Carousel {
 
   ripCarouselSlideData() {
     this.cards.forEach(card => {
-      const targetElem = card.querySelector('.gt-carousel__card-img');
+      const targetElem = card.querySelector('.tcp-carousel__card-img');
       const { header } = targetElem.dataset;
       const { subHeader } = targetElem.dataset;
       this.carouselData.push({

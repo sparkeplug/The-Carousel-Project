@@ -7,7 +7,7 @@ import './styles/carousel.scss';
  */
 export function CarouselInit(config = {}) {
   const { initSlide } = config;
-  const carousels = document.querySelectorAll('.gt-carousel');
+  const carousels = document.querySelectorAll('.tcp-carousel');
   const carouselsInits = [];
   carousels.forEach(carousel => {
     carouselsInits.push(new Carousel(carousel, initSlide || 1));
