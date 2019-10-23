@@ -10,6 +10,11 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     library: 'theCarouselProject'
   },
+  resolve: {
+    alias: {
+      theCarouselProject: path.resolve(__dirname, 'dist/theCarouselProject.min')
+    }
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/demo.html'

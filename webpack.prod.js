@@ -13,6 +13,11 @@ module.exports = {
     libraryTarget: 'umd',
     umdNamedDefine: true
   },
+  resolve: {
+    alias: {
+      theCarouselProject: path.resolve(__dirname, 'dist/theCarouselProject.min')
+    }
+  },
   plugins: [
     new MiniCssExtractPlugin({
       filename: 'theCarouselProject.min.css'
