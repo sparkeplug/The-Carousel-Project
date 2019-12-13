@@ -81,7 +81,7 @@ LEGEND for above skeleton :
 
 # Demo
 
-[STACKBLITZ](https://the-carousel-project.stackblitz.io)
+[STACKBLITZ](https://the-carousel-project-demo.stackblitz.io)
 
 # Note
 
