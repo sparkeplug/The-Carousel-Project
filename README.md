@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/sparkeplug/The-Carousel-Project.svg?branch=master)](https://travis-ci.org/sparkeplug/The-Carousel-Project) [![Coverage Status](https://coveralls.io/repos/github/sparkeplug/The-Carousel-Project/badge.svg?branch=master)](https://coveralls.io/github/sparkeplug/The-Carousel-Project?branch=master)
 
-The Carousel Project is a simple and lightweight carousel made with just JAVASCRIPT. 
+The Carousel Project is a simple and lightweight carousel made with just JAVASCRIPT.
 
 # Installation
 
@@ -82,12 +82,3 @@ LEGEND for above skeleton :
 # Demo
 
 [STACKBLITZ](https://the-carousel-project-demo.stackblitz.io)
-
-# Note
-
-This is my first NPM package for the open source community. If you find any ISSUES or if you want to collaborate, please feel free to contact. 
-
-Also please use the ISSUE TEMPLATE for bugs and FEATURE REQUEST template for new feature request.
-
-
-
